@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+The current count is: <span class="redtext">{{counter}}</span>.<br/><br/> <!--{{variable}} display a variable with{{-->
+<button (click)="testclick()">Click Me</button><br/><br/>
+
+<div *ngFor="let item of [0,1,2,3]; let i = index;"> <!--this is a for loop?-->
+The current number is: {{i}}
+</div>
+
+<br/><br/>
+
+<div *ngFor="let person of people"> <!--this is a forloop going through an array or people-->
+  howdy {{person.firstname}} {{person.lastname}}
+</div>
